@@ -1,4 +1,4 @@
-#DLL do betinha 
+DLL do betinha 
 
 Como funciona:
 
