@@ -1,9 +1,9 @@
-#DLL #do #betinha 
+#DLL do betinha 
 
 Como funciona:
 
 ```
-C\#
+C#
   var nome_da_sua_var = new BetaCalculator();
   BetaCalculator.Beta(Valor A (int));   //Ex. valor = 100 
                                         //Resposta = 100 - 100 = 0 (NÃO SOBRA NAAAAADA PARA O BETINHA)
