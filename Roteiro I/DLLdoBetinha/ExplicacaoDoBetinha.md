@@ -1,20 +1,34 @@
-🚀 BetaCalculator DLL
-A BetaCalculator é uma biblioteca desenvolvida em C# projetada para realizar cálculos de subtração totalitária, garantindo que o resíduo final da operação seja sempre zero. É a ferramenta ideal para quando você precisa que "não sobre nada para o betinha".
+# Documentação Técnica: BetaCalculator Project
 
-🛠️ Instalação
-Para utilizar a DLL, adicione a referência do arquivo BetaCalculator.dll ao seu projeto .NET.
+Este documento contém o código-fonte e as instruções de uso para a DLL `BetaCalculator`, uma ferramenta essencial para operações de liquidação total de valores.
 
-💻 Como Usar
-A classe principal funciona de forma instanciada. O método Beta processa um valor inteiro e retorna o resultado da subtração do valor por ele mesmo.
+---
 
-C#
-using BetaCalculatorSystem;
+## 1. Código Fonte (C#)
 
-// 1. Instancie a classe
-var calculator = new BetaCalculator();
+Abaixo está a implementação da classe. Note que utilizamos o namespace `BetaLibrary` para organização e comentários XML para suporte ao IntelliSense.
 
-// 2. Chame o método passando o valor desejado (int)
-int resultado = calculator.Beta(100); 
+```csharp
+using System;
 
-// Resultado: 0 (100 - 100)
-Console.WriteLine($"Sobrou para o betinha: {resultado}");
+namespace BetaLibrary
+{
+    /// <summary>
+    /// Classe responsável por operações de subtração totalitária.
+    /// </summary>
+    public class BetaCalculator
+    {
+        /// <summary>
+        /// Realiza o cálculo Beta, onde o valor de entrada é subtraído de si mesmo.
+        /// Garante que o resultado residual seja sempre zero.
+        /// </summary>
+        /// <param name="valorA">O valor inteiro a ser processado.</param>
+        /// <returns>Retorna 0 (valorA - valorA).</returns>
+        public int Beta(int valorA)
+        {
+            // Lógica: Valor - Valor = 0
+            // Objetivo: Não sobrar nada para o betinha.
+            return valorA - valorA;
+        }
+    }
+}
